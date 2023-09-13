@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "Material Symbols Rounded";
+	font-style: normal;
+	src: url(../fonts/MaterialSymbolsRounded.woff2) format('woff2');
+}
+.material-symbol {
+	font-family: 'Material Symbols Rounded';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	font-feature-settings: 'liga';
+	user-select: none;
+}
+#sidebar-toggle { cursor: pointer; background: none; color: #fff; border: none; }
+#sidebar { position: fixed; height: 100%; width: 0; z-index: 9990; top: 3px; right: 0; background: #111111; overflow-x: hidden; padding-top: 40px; transition: 0.3s; }
+#sidebar-links { height:98%;display:flex;flex-direction:column;justify-content:space-between; }
+#sidebar a { background: none; padding: 8px; text-decoration: none; text-align: center; font-size: 20px; color: #ccc; display: block; transition: 0.1s; white-space: nowrap; }
+#sidebar a span, #sidebar a img { vertical-align: middle; }
+#sidebar a img { height: 20px; opacity: 0.7; }
+#sidebar a span:last-child { margin-left: 10px; padding-top: 2px; }
+#sidebar a:hover { background: #333; color: #fff; }
+#sidebar a:hover img { opacity: 1; }
+#sidebar .sidebar-close { background: none; border: none; padding: 5px; cursor: pointer; position: absolute; top: 2px; right: 15px; font-size: 24px; color: #ccc; }
+#sidebar .sidebar-close:hover { color: #fff; }
+#sidebar.open { width: 100% }
+#sidebar-links-lower { padding-bottom: 10px; }
+@media screen and (min-width: 721px){ #sidebar.open { width: 250px; } #sidebar a { padding-left: 32px; text-align: left; } #sidebar-links-lower { padding-bottom: 0; } }
+header { height: 42px; font-size: 20px; }
+#header-logo img { width: 28px; height: auto; margin-right: 10px; }
+#header-logo { display: flex; align-items: center; }
+#header-discord, #header-discord img { height: 20px; }
+#header-icons, #header-settings { height: unset; }
+#sidebar #sidebar-icons { display: flex; justify-content: center; }
+#sidebar #sidebar-icons a { display: inline-block; padding: 8px; background: none; }
+#sidebar #sidebar-icons a img { width: 24px; height: 24px; }
+
+#modal-background { display: none; position: absolute; z-index: 9995; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: #000; background: #000000aa; }
+#modal-background .modal { display: none; position: absolute; z-index: 9999; left: 10%; top: 50px; width: 80%; color: #000; background-image: linear-gradient(to right, #f7cd12 20px, #566272 20px), linear-gradient(to right, #566272 calc(100% - 20px), #f7cd12 calc(100% - 20px)), linear-gradient(to bottom, #f7cd12 20px, #566272 20px), linear-gradient(to bottom, #566272 calc(100% - 20px), #f7cd12 calc(100% - 20px)); background-size: 100% 10px, 100% 10px, 10px 100%, 10px 100%; background-position: 0 0, 0 100%, 0 0, 100% 0; background-repeat: no-repeat; border: none; border-radius: 7px; padding: 5px; }
+#modal-background .modal:after { content: ""; position: absolute; bottom: -50px; height: 50px; width: 100%; }
+#modal-background .modal .modal-contents { display: block; width: 100%; height: 100%; background: #193050; color: #fff; padding: 10px; border-radius: 7px; }
+@media screen and (min-width: 721px){ #modal-background .modal { top: 100px; } }

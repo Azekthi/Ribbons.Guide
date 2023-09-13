@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ribbons.Guide - Ribbon Tracking and Guidance</title>
+		<meta name="description" content="Keep track of your Pokémon and their Ribbons using Ribbons.Guide!">
+		<!--compatibility-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--PWA-->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#112028">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="msapplication-TileColor" content="#112028">
+        <meta name="msapplication-config" content="browserconfig.xml">
+        <meta name="theme-color" content="#112028">
+		<!-- Social Meta Tags -->
+		<meta property="og:url" content="https://ribbons.guide">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Ribbons.Guide - Ribbon Tracking and Guidance">
+		<meta property="og:description" content="Keep track of your Pokémon and their Ribbons using Ribbons.Guide!">
+		<meta property="og:image" content="og-image.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="ribbons.guide">
+		<meta property="twitter:url" content="https://ribbons.guide">
+		<meta name="twitter:title" content="Ribbon Tracking and Guidance">
+		<meta name="twitter:description" content="Keep track of your Pokémon and their Ribbons using Ribbons.Guide!">
+		<meta name="twitter:image" content="og-image.png">
+		<!--CSS-->
+		<link rel="stylesheet" href="css/selectize.default.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/themes.css">
+		<link rel="stylesheet" href="css/style2.css">
+		<!--Data-->
+		<script src="data/pokemon.js"></script>
+		<script src="data/ribbons.js"></script>
+		<script src="data/misc.js"></script>
+		<script src="data/changelog.js"></script>
+		<!--JS-->
+		<script src="js/jquery-3.6.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery-ui.touch-punch.min.js"></script>
+		<script src="js/selectize.min.js"></script>
+		<script src="js/obj-pokemon.js"></script>
+		<script src="js/functions2.js"></script>
+		<script src="upup.min.js"></script>
+        <script>
+            UpUp.start({
+				'cache-version': '2023-09-13-1',
+                'content-url': 'index2.html',
+                'assets': [
+                    'css/selectize.default.css', 'css/style.css', 'css/themes.css', 'css/style2.css',
+                    'data/pokemon.js', 'data/ribbons.js', 'data/misc.js', 'data/changelog.js',
+                    'js/jquery-3.6.1.min.js', 'js/jquery-ui.min.js', 'js/jquery-ui.touch-punch.min.js', 'js/selectize.min.js', 'js/obj-pokemon.js', 'js/functions2.js'
+                ]
+            });
+        </script>
+	</head>
+	<body>
+		<div id="sidebar">
+			<button class="sidebar-close material-symbol" title="Close">close</button>
+			<div id="sidebar-links">
+				<div id="sidebar-links-upper">
+					<a href="#" onclick="return false"><img src="img/ui/pokeball.png" alt="Poké Ball"><span>My Pokémon</span></a>
+					<a href="#" onclick="return false"><img src="img/ui/achieve.png" alt="Ribbon"><span>Earning Ribbons</span></a>
+				</div>
+				<div id="sidebar-links-lower">
+					<a href="#" onclick="modal('settings');return false;"><span class="material-symbol">settings</span><span>Settings</span></a>
+					<a href="#" onclick="modal('changelog');return false;"><span class="material-symbol">list</span><span>Changelog</span></a>
+					<a href="#" onclick="modal('about');return false;"><span class="material-symbol">info</span><span>About</span></a>
+					<div id="sidebar-icons">
+						<a href="https://discord.gg/frv7dpWzDG" title="Discord"><img src="img/ui/discord.svg" alt="Discord"></a>
+						<a href="https://github.com/Azekthi/Ribbons.Guide" title="GitHub"><img src="img/ui/github.svg" alt="Github"></a>
+						<a href="https://ko-fi.com/slycooperfan1" title="Ko-Fi"><img src="img/ui/kofi.png" alt="Ko-Fi"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div id="header-logo">
+				<div><img src="img/ribbons/best-friends-ribbon.png" alt="Logo"></div>
+				<div><span>Ribbons.Guide</span></div>
+			</div>
+			<button id="sidebar-toggle" class="material-symbol" title="Menu" onclick="$('#sidebar').toggleClass('open');$(this).blur()">menu</button>
+		</header>
+		<div id="modal-background">
+			<div id="modal-settings" class="modal"><div class="modal-contents">Settings</div></div>
+			<div id="modal-changelog" class="modal"><div class="modal-contents">Changelog</div></div>
+			<div id="modal-about" class="modal"><div class="modal-contents">Ribbons.Guide is a progressive web app that allows you to keep track of your Pokémon and their Ribbons! Ribbons.Guide doesn't store or send any data anywhere—it's all saved on your device! <a href="https://github.com/Azekthi/Ribbons.Guide">This is an open-source project hosted on GitHub using GitHub Pages.</a> It was developed as a love letter to the helpful and welcoming r/PokémonRibbons community.<br><br><small><small>The images used in Ribbons.Guide were provided by <a href="https://github.com/msikma/pokesprite">PokéSprite</a>, <a href="https://yakkun.com/sv/zukan/#filter=9">ポケモン徹底攻略</a>, <a href="https://pokeliberty.net/resources/82">PokéLiberty</a>, <a href="https://github.com/PokeMiners/pogo_assets">Pokémon GO Assets</a>, and <a href="https://github.com/google/material-design-icons">Material Symbols</a>.<br>Ribbons.Guide also makes use of <a href="https://github.com/jquery/jquery">jQuery</a>, <a href="https://github.com/jquery/jquery-ui">jQuery UI</a>, <a href="https://github.com/RWAP/jquery-ui-touch-punch">jQuery UI Touch Punch</a>, <a href="https://github.com/selectize/selectize.js">Selectize</a>, <a href="https://github.com/TalAter/UpUp">UpUp</a>, and <a href="https://fonts.google.com/">Google Fonts</a>.<br>Pokémon, data, and images © Nintendo/Creatures Inc./Game Freak. This project is not affiliated with Nintendo, Creatures Inc., Game Freak, or The Pokémon Company. All original content and code is governed by the <a href="https://opensource.org/license/gpl-3-0/">GPL-3.0 license</a>.</small></small></div></div>
+		</div>
+	</body>
+</html>

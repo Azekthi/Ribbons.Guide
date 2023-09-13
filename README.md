@@ -27,8 +27,7 @@ Ribbons.Guide also makes use of the following dependencies:
 - [jQuery](https://github.com/jquery/jquery)
 - [jQuery UI](https://github.com/jquery/jquery-ui)
 - [jQuery UI Touch Punch](https://github.com/RWAP/jquery-ui-touch-punch)
-- [jQuery Modal](https://github.com/kylefox/jquery-modal)
-- [Select2](https://github.com/select2/select2)
+- [Selectize](https://github.com/selectize/selectize.js)
 - [UpUp](https://github.com/TalAter/UpUp)
 - [Google Fonts](https://fonts.google.com/)
 
