@@ -60,16 +60,16 @@
 	</head>
 	<body>
 		<div id="sidebar">
-			<button class="sidebar-close material-symbol" title="Close">close</button>
+			<button class="sidebar-close material-symbol-bubble" title="Close">close</button>
 			<div id="sidebar-links">
 				<div id="sidebar-links-upper">
 					<a href="#" onclick="return false"><img src="img/ui/pokeball.png" alt="Poké Ball"><span>My Pokémon</span></a>
-					<a href="#" onclick="return false"><img src="img/ui/achieve.png" alt="Ribbon"><span>Earning Ribbons</span></a>
+					<a href="#" onclick="return false"><span class="material-symbol">workspace_premium</span><span>Earning Ribbons</span></a>
 				</div>
 				<div id="sidebar-links-lower">
 					<a href="#" onclick="modal('settings');return false;"><span class="material-symbol">settings</span><span>Settings</span></a>
-					<a href="#" onclick="modal('changelog');return false;"><span class="material-symbol">list</span><span>Changelog</span></a>
-					<a href="#" onclick="modal('about');return false;"><span class="material-symbol">info</span><span>About</span></a>
+					<a href="#" onclick="modal('changelog');return false;"><span class="material-symbol-bubble">history</span><span>Changelog</span></a>
+					<a href="#" onclick="modal('about');return false;"><span class="material-symbol-bubble">info</span><span>About</span></a>
 					<div id="sidebar-icons">
 						<a href="https://discord.gg/frv7dpWzDG" title="Discord"><img src="img/ui/discord.svg" alt="Discord"></a>
 						<a href="https://github.com/Azekthi/Ribbons.Guide" title="GitHub"><img src="img/ui/github.svg" alt="Github"></a>
@@ -83,7 +83,7 @@
 				<div><img src="img/ribbons/best-friends-ribbon.png" alt="Logo"></div>
 				<div><span>Ribbons.Guide</span></div>
 			</div>
-			<button id="sidebar-toggle" class="material-symbol" title="Menu" onclick="$('#sidebar').toggleClass('open');$(this).blur()">menu</button>
+			<button id="sidebar-toggle" class="material-symbol-bubble" title="Menu" onclick="$('#sidebar').toggleClass('open');$(this).blur()">menu</button>
 		</header>
 		<div id="modal-background">
 			<div id="modal-settings" class="modal"><div class="modal-contents">Settings</div></div>
