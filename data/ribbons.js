@@ -2785,6 +2785,9 @@ const allRibbons = {
 			"kor": "고난을 극복한",
 			"cht": "克服了困難的",
 			"chs": "克服了困难的"
+		},
+		"guide": {
+			"eng": "The National Ribbon is automatically awarded to a purified Shadow Pokémon. The Shadow Pokémon must have been purified in Colosseum or XD; purified Shadow Pokémon in GO do not earn this Ribbon.<br><br>In both Colosseum and XD, Shadow Pokémon can be purified by depleting their Heart Gauge. Battling, calling, walking, and using scents will deplete the Heart Gauge by various amounts, depending on the Pokémon's Nature. Once the Heart Gauge is fully depleted, performing a ceremony at the Relic Stone in Agate Village will purify the Pokémon.<br><br>In Colosseum, a Shadow Pokémon can also be instantly purified by using a Time Flute at the Relic Stone to summon Celebi. Only three Time Flutes are available in the game and each is consumed upon use, so this method can only be done to purify three Shadow Pokémon per save file.<br><br>In XD, a Shadow Pokémon can also be purified over time by placing the Pokémon into the Purify Chamber. The process will be faster if the tempo in the chamber is high; this requires placing Pokémon with type advantages to each other around the Shadow Pokémon. Shadow Lugia can only be purified in the Purify Chamber and only if all nine sets have high tempo."
 		}
 	},
 	"earth-ribbon": {
@@ -2825,6 +2828,9 @@ const allRibbons = {
 			"kor": "100명에게 승리한",
 			"cht": "１００連勝的",
 			"chs": "１００连胜的"
+		},
+		"guide": {
+			"eng": "The Earth Ribbon is awarded to all Pokémon in the player's party after defeating 100 Trainers in a row at Mt. Battle. The challenge must be completed without changing the party (re-ordering is allowed) or leaving the area. In Colosseum, the challenge must be done in Story Mode; in XD, this is the only available mode.<br><br>Note that Mt. Battle is a very good source of experience, which may lead to Pokémon going above level 50 and disqualifying them from the Winning Ribbon if they don't already have it."
 		}
 	},
 	"world-ribbon": {
