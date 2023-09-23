@@ -1316,7 +1316,6 @@ body[lang="zh-Hans"] span.lang.chs {
 	display: inline;
 }
 
-/* TEMPORARY MEW MIGHTIEST MARK */
 .pokemon-list-entry[data-timelimited] .pokemon-list-guide {
 	position: relative;
 }
@@ -1354,4 +1353,24 @@ body[lang="zh-Hans"] span.lang.chs {
 	100% {
 		box-shadow: 0 0 1px 20px rgba(0, 0, 0, 0);
 	}
+}
+#pokeform-scale {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+.pokeform-scale-row {
+	display: flex;
+	align-items: center;
+}
+.pokeform-scale-row label {
+	display: contents;
+}
+.pokeform-scale-icon {
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+}
+.pokeform-scale-icon + .pokeform-scale-icon {
+	margin-left: 0;
 }
